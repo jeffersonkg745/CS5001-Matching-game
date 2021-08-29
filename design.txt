@@ -1,0 +1,46 @@
+'''
+Kaelyn Jefferson
+CS5001 Final Project
+Fall 2020
+
+Design.txt : Description of final project.
+'''
+
+1. Functions defined:
+
+- welcome_user(): presents popup windows and gets user information
+- create_board(): creates the outline of the game board
+- add_stop(): adds the stop button to the board
+- add_leaderboard(): adds in the leaderboard text
+- add_statusboard(): adds in the status board at beginning of game
+- add_cards(): presents the amount of cards specified by user
+- make_dict(): creates dictionaries of randomly assorted cards
+- flip(): with the turtle.onclick() function, it uses click position to "flip" the cards based on their position. It also has the "stop" function if the user quits. When click 2 cards, it sends card data to game function.
+- game(): Compares the 2 cards chosen, and either "flips" them back down or clears the cards if they match.
+- update_board(): updates the amount of guesses and matches of the user.
+- add_status(): updates the text on the UI for keeping score count.
+- check_win(): checks to see if user has finished with all cards on board to end game.
+- save_win(): when user wins the game (clears all cards) it saves the name and score.
+- clear_scores(): clears the files used for the game (so user starts game with no scores)
+- main()
+
+2. Data structures used:
+- lists
+- dictionaries
+- files
+- exception handling
+- strings
+- tuples
+- loops
+- global variables
+
+Lists, strings, loops and exception handling are used throughout the project. Dictionaries and tuples were used primarily for storing the card images, and a dictionary was also used for the leaderboard. I also used files throughout the project, due to the turtle function (turtle.onclick()) being difficult to keep information present while clicking through the game. I tried to use files to store information over more global variables, which I tried to keep to a minimum for only storing the player name and card number chosen by the user for the game.
+
+
+3. My approach to testing:
+
+In my approach to testing, I first started by implementing the first task, such as making the user screen pop-ups. Then I started to think of the "edge cases" like we learned with exception handling for that function. From there, I would attempt to fix any visual errors I found by running through all of the "edge cases". Lastly, I tried to fit functions together to work with Turtle. So overall, every step in my project was mainly 1. Trying to implement a function, 2. Assessing and trying to address the "edge cases", 3. Fixing any major (mainly visual) errors for all of the "edge cases" found, and 4. Addressing issues that arose when piecing functions together. 
+
+
+
+
